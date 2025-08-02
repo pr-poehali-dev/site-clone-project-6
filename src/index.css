@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,10 +15,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 25% 27%;
 
-    --primary: 217 91% 60%;
+    --primary: 262 83% 70%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 215 16% 47%;
+    --secondary: 45 93% 47%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
@@ -108,7 +108,21 @@
   h4,
   h5,
   h6 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Cormorant", serif;
     font-weight: 500;
+  }
+
+  .cosmic-bg {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%);
+  }
+
+  .star-pattern {
+    background-image:
+      radial-gradient(2px 2px at 20px 30px, #fbbf24, transparent),
+      radial-gradient(2px 2px at 40px 70px, #a855f7, transparent),
+      radial-gradient(1px 1px at 90px 40px, #fbbf24, transparent),
+      radial-gradient(1px 1px at 130px 80px, #a855f7, transparent);
+    background-repeat: repeat;
+    background-size: 150px 100px;
   }
 }
